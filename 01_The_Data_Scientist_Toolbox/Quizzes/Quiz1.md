@@ -10,8 +10,8 @@ Which of the following are courses in the Data Science Specialization? Select al
 * Statistical Inference
 * Exploratory Data Analysis
 
-Solution:
-Statistical Inference
+Solution: </br>
+Statistical Inference </br>
 Exploratory Data Analysis
 
 Question 2
@@ -22,8 +22,8 @@ Why are we using R for the course track? Select all that apply.
 * Packages are easy to install and "play nicely" together.
 * R is the only programming language data scientists use.
 
-Solution:
-R is one of the most widely used programming languages for Data Science.
+Solution: </br>
+R is one of the most widely used programming languages for Data Science. </br>
 Packages are easy to install and "play nicely" together.
 
 Question 3
@@ -35,9 +35,9 @@ What are good ways to find answers to questions in this course track? Select all
 * Emailing the community TAs
 * Emailing your instructors
 
-Solution:
-Posting to the course discussion forum 
-Searching Stack Overflow
+Solution: </br>
+Posting to the course discussion forum </br>
+Searching Stack Overflow </br>
 Searching Google.
 
 Question 4
@@ -48,8 +48,8 @@ What are characteristics of good questions on the message boards? Select all tha
 * Is insulting or rude.
 * Is polite and courteous.
 
-Solution:
-Is very specific.
+Solution: </br>
+Is very specific. </br>
 Is polite and courteous
 
 Question 5
@@ -61,6 +61,6 @@ Which of the following packages provides machine learning functionality? Select 
 * shiny
 * gbm
 
-Solution:
-pamr
+Solution: </br>
+pamr </br>
 gbm

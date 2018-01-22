@@ -10,7 +10,7 @@ We take a random sample of individuals in a population and identify whether they
 * This is an example of an descriptive data analysis.
 * This is an example of a predictive data analysis.
 
-Solution:
+Solution: </br>
 This is an example of an inferential data analysis.
 
 Question 2
@@ -22,7 +22,7 @@ What is the most important thing in Data Science?
 * Hacking skills.
 * Statistical inference.
 
-Solution:
+Solution: </br>
 The question you are trying to answer.
 
 Question 3
@@ -35,7 +35,7 @@ If the goal of a study was to relate Martha Stewart Living Subscribers to Our Si
 * We would be performing inference on the relationship between Martha Stewart Living Subscribers and Our Site's Users.
 * We wouldn't know the sensitivity of our predictions.
 
-Solution:
+Solution: </br>
 There would be confounding because the number of people that live in an area is related to both Martha Stewart Living Subscribers and Our Site's Users.
 
 Question 4
@@ -46,7 +46,7 @@ What is an experimental design tool that can be used to address variables that m
 * Using regression models.
 * Fixing variables.
 
-Solution:
+Solution: </br>
 Fixing variables.
 
 Question 5
@@ -58,5 +58,5 @@ What is the reason behind the explosion of interest in big data?
 * We recently discovered ways to use data to answer scientific and business questions.
 * We have better experimental design now than previously.
 
-Solution:
+Solution: </br>
 The price and difficulty of collecting and storing data has dramatically dropped.
