@@ -3,8 +3,9 @@
 ## Taken by Jack Zhan
 
 ## List of Courses 
-Course Number | Course | Link to Repo
+Course # | Course | Link to Repo
 --- | --- | --- 
 
 1 |  The Data Scientist's Toolbox |  [Course Repo](https://github.com/jackjzhan/datasciencecoursera/tree/master/01_The_Data_Scientist_Toolbox "Git Repo")
+
 2 |  R Programming |  [Course Repo](https://github.com/jackjzhan/datasciencecoursera/tree/master/02_R_Programming "Git Repo")
