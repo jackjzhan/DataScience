@@ -1,4 +1,4 @@
-# R Programming (JHU) Coursera
+# R Programming Quiz 3 (JHU) Coursera
 ## Taken by Jack Zhan
 ## 01/22/2018
 
@@ -187,7 +187,6 @@ colnames(dat)
 
 Question 12
 -----------
-Question 12
 Extract the first 2 rows of the data frame and print them to the console. What does the output look like?
 
 Solution: </br>
@@ -214,7 +213,6 @@ nrow(dat)
 
 Question 14
 -----------
-Question 14
 Extract the last 2 rows of the data frame and print them to the console. What does the output look like?
 
 Solution: </br>

@@ -1,4 +1,4 @@
-# The Data Scientist's Toolbox Quiz 3 (JHU) Coursera
+# R Programming Quiz 3 (JHU) Coursera
 ## Taken by Jack Zhan
 ## 01/21/2018
 
