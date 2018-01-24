@@ -2,7 +2,6 @@
 ## John Hopkins Coursera
 ## Taken by Jack Zhan
 
-##Course Project
 This is my Repo for the final project. The goal is to to create a tidy dataset from the HAR dataset. The run_analysis.R script creates the output tidy.txt.
 
 ## Review criteria
