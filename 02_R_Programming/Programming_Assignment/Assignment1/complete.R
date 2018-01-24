@@ -30,7 +30,7 @@ complete <- function(directory, id = 1:332) {
   output
 }
 
-setwd("C:/git/DataScience/02_R_Programming/Dataset")
+setwd("C:/git/datasciencecoursera/02_R_Programming/Dataset")
 
 cc <- complete("specdata", c(6, 10, 20, 34, 100, 200, 310))
 print(cc$nobs)

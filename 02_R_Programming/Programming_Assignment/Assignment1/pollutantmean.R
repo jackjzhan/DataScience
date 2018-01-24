@@ -28,7 +28,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
   mean(output)
 }
 
-setwd("C:/git/DataScience/02_R_Programming/Dataset")
+setwd("C:/git/datasciencecoursera/02_R_Programming/Dataset")
 pollutantmean("specdata", "sulfate", 1:10)
 pollutantmean("specdata", "nitrate", 70:72)
 pollutantmean("specdata", "sulfate", 34)

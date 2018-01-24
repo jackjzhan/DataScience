@@ -29,7 +29,7 @@ corr <- function(directory, threshold = 0) {
   output
 }
 
-setwd("C:/git/DataScience/02_R_Programming/Dataset")
+setwd("C:/git/datasciencecoursera/02_R_Programming/Dataset")
 cr <- corr("specdata")                
 cr <- sort(cr)                
 set.seed(868)                
