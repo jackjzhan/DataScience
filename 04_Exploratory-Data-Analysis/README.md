@@ -5,7 +5,7 @@
 Quiz # | Link 
 --- | --- 
 1 | [Quiz](https://github.com/jackjzhan/datasciencecoursera/blob/master/04_Exploratory-Data-Analysis/Quizzes/Quiz1.md)
-2 | [Quiz](https://github.com/jackjzhan/datasciencecoursera/blob/master/04_Exploratory-Data-Analysis/Quizzes/Quiz1.md)
+2 | [Quiz](https://github.com/jackjzhan/datasciencecoursera/blob/master/04_Exploratory-Data-Analysis/Quizzes/Quiz2.md)
 ## Programming Assignments 
 Project | Link
 --- | ---
