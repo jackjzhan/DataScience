@@ -1,4 +1,4 @@
-# R Programming Quiz 3 (JHU) Coursera
+# R Programming Quiz 2 (JHU) Coursera
 ## Taken by Jack Zhan
 ## 01/22/2018
 

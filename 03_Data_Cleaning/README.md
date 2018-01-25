@@ -12,4 +12,4 @@ Quiz # | Link
 ## Programming Assignments 
 Project | Link
 --- | ---
-1 | [Project](https://github.com/jackjzhan/DataScience/blob/master/02_R_Programming/Project)
+1 | [Project](https://github.com/jackjzhan/datasciencecoursera/tree/master/03_Data_Cleaning/Project)

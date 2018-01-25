@@ -4,10 +4,9 @@
 ## Quizzes
 Quiz # | Link 
 --- | --- 
-1 | [Quiz](https://github.com/jackjzhan/DataScience/blob/master/Exploratory-Data-Analysis/Quizzes/Quiz1.md)
-2 | [Quiz](https://github.com/jackjzhan/DataScience/blob/master/Exploratory-Data-Analysis/Quizzes/Quiz2.md)
-
+1 | [Quiz](https://github.com/jackjzhan/datasciencecoursera/blob/master/04_Exploratory-Data-Analysis/Quizzes/Quiz1.md)
+2 | [Quiz](https://github.com/jackjzhan/datasciencecoursera/blob/master/04_Exploratory-Data-Analysis/Quizzes/Quiz1.md)
 ## Programming Assignments 
 Project | Link
 --- | ---
-1 | [Project](https://github.com/jackjzhan/DataScience/blob/master/02_R_Programming/Programming_Assignment/Assignment1)
+1 | [Project](https://github.com/jackjzhan/datasciencecoursera/tree/master/04_Exploratory-Data-Analysis/Programming_Assignment/Assignment1)
