@@ -9,7 +9,7 @@ This is my Repo for the final project. The goal is to to create a tidy dataset f
 * The Github repo contains the required scripts.
 * GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
 * The README that explains the analysis files is clear and understandable.
-* The work submitted for this project is the work of the student who submitted it.
+* The work submitted for this project is the work of the student who submitted it.</br>
 
 ##How the code works
 The code uses the HAR dataset files in the ../Dataset directory.</br>

@@ -44,3 +44,6 @@ final_dat$subject <- as.factor(final_dat$subject)
 dat_melt <- melt(final_dat, id = c("subject", "activity"))
 dat_mean <- dcast(dat_melt, subject + activity ~ variable, mean)
 write.table(dat_mean, "../../Project/tidy.txt", row.names = FALSE, quote = FALSE)
+
+summary(dat_mean$subject)
+
