@@ -10,3 +10,4 @@ Quiz # | Link
 Project | Link
 --- | ---
 1 | [Project](https://github.com/jackjzhan/datasciencecoursera/tree/master/04_Exploratory-Data-Analysis/Programming_Assignment/Assignment1)
+2 | [Project](https://github.com/jackjzhan/datasciencecoursera/tree/master/04_Exploratory-Data-Analysis/Programming_Assignment/Assignment2)
