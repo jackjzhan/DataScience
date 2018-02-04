@@ -1,0 +1,120 @@
+# R Programming (JHU) Coursera
+## Written by Jack Zhan
+## 02/04/2018
+
+---
+title: "Course Project 2"
+author: "Jack Zhan"
+date: "February 3, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(data.table)
+library(ggplot2)
+```
+
+
+## Project Assignment
+
+The basic goal of this assignment is to explore the NOAA Storm Database  
+and answer some basic questions about severe weather events. You must  
+use the database to answer the questions below and show the code for  
+your entire analysis. Your analysis can consist of tables, figures,  
+or other summaries. You may use any R package you want to support your  
+analysis.
+
+## Project Synopsis
+
+Storms and other severe weather events can cause both public health and  
+economic problems for communities and municipalities. Many severe events  
+can result in fatalities, injuries, and property damage, and preventing  
+such outcomes to the extent possible is a key concern.  
+  
+This project involves exploring the U.S. National Oceanic and Atmospheric  
+Administration's (NOAA) storm database. This database tracks characteristics  
+of major storms and weather events in the United States, including when and  
+where they occur, as well as estimates of any fatalities, injuries, and 
+property damage.
+
+# This analysis will address the following questions:
+1. Across the United States, which types of events (as indicated in the  
+EVTYPE variable) are most harmful with respect to population health ?
+2. Across the United States, which types of events have the greatest  
+economic consequences ?
+
+# This analysis shows by aggregating the data by storm events type :
+1. Tornados are the most harmfull events on population health (including  
+injury and fatalities).
+2. Floods are responsible for the most economic damage.
+
+## Data Processing
+Load and subset the data
+```{r}
+getwd()
+dat <- fread("../../Dataset/repdata%2Fdata%2FStormData.csv")
+sub_dat <- dat[,c('EVTYPE','FATALITIES','INJURIES', 'PROPDMG', 'PROPDMGEXP', 'CROPDMG', 'CROPDMGEXP')]
+
+```
+
+## Standarize the units in Data Set
+
+```{r}
+sub_dat$PROPDMGNUM = 0
+sub_dat[sub_dat$PROPDMGEXP == "H", 'PROPDMGNUM'] = sub_dat[sub_dat$PROPDMGEXP == "H", 'PROPDMG'] * 10^2
+sub_dat[sub_dat$PROPDMGEXP == "K", 'PROPDMGNUM'] = sub_dat[sub_dat$PROPDMGEXP == "K", 'PROPDMG'] * 10^3
+sub_dat[sub_dat$PROPDMGEXP == "M", 'PROPDMGNUM'] = sub_dat[sub_dat$PROPDMGEXP == "M", 'PROPDMG'] * 10^6
+sub_dat[sub_dat$PROPDMGEXP == "B", 'PROPDMGNUM'] = sub_dat[sub_dat$PROPDMGEXP == "B", 'PROPDMG'] * 10^9
+
+sub_dat$CROPDMGNUM = 0
+sub_dat[sub_dat$CROPDMGEXP == "H", 'CROPDMGNUM'] = sub_dat[sub_dat$CROPDMGEXP == "H", 'CROPDMG'] * 10^2
+sub_dat[sub_dat$CROPDMGEXP == "K", 'CROPDMGNUM'] = sub_dat[sub_dat$CROPDMGEXP == "K", 'CROPDMG'] * 10^3
+sub_dat[sub_dat$CROPDMGEXP == "M", 'CROPDMGNUM'] = sub_dat[sub_dat$CROPDMGEXP == "M", 'CROPDMG'] * 10^6
+sub_dat[sub_dat$CROPDMGEXP == "B", 'CROPDMGNUM'] = sub_dat[sub_dat$CROPDMGEXP == "B", 'CROPDMG'] * 10^9
+```
+
+## Examining the most Harmful Weather Event
+
+```{r}
+# Plot Weather Event vs number of Fatalities
+fatalities <- aggregate(FATALITIES ~ EVTYPE, data=sub_dat, sum)
+fatalities <- fatalities[order(-fatalities$FATALITIES), ][1:10, ]
+fatalities$EVTYPE <- factor(fatalities$EVTYPE, levels = fatalities$EVTYPE)
+
+ggplot(fatalities, aes(x = EVTYPE, y = FATALITIES)) + 
+    geom_bar(stat = "identity") + 
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+    xlab("Weather Type") + ylab("Deaths") + ggtitle("Top 10 Weather Fatalities")
+
+```
+
+```{r}
+# Plot Weather Event vs number of Injuries
+injuries <- aggregate(INJURIES ~ EVTYPE, data=sub_dat, sum)
+injuries <- injuries[order(-injuries$INJURIES), ][1:10, ]
+injuries$EVTYPE <- factor(injuries$EVTYPE, levels = injuries$EVTYPE)
+
+ggplot(injuries, aes(x = EVTYPE, y = INJURIES)) + 
+    geom_bar(stat = "identity") + 
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+    xlab("Weather Type") + ylab("Injuries") + ggtitle("Top 10 Weather Injuries")
+```
+
+## Examining the Weather Event that causes the Most Property Damage
+
+```{r}
+damages <- aggregate(PROPDMGNUM + CROPDMGNUM ~ EVTYPE, data=sub_dat, sum)
+names(damages) = c("EVTYPE", "TOTALDAMAGE")
+damages <- damages[order(-damages$TOTALDAMAGE), ][1:10, ]
+damages$EVTYPE <- factor(damages$EVTYPE, levels = damages$EVTYPE)
+
+ggplot(damages, aes(x = EVTYPE, y = TOTALDAMAGE)) + 
+    geom_bar(stat = "identity") + 
+    theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
+    xlab("Weather Type") + ylab("Damages is US Dollars") + ggtitle("Top 10 Property & Crop Damages")
+
+```
